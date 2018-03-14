@@ -12,6 +12,36 @@
 .grid div{
   background: rgba(200,200,200, .3);
 }
+
+.grid-4{
+  grid-gap: 2px;
+  grid-template-rows: 50px auto;
+  grid-template-columns: 10px auto 10px 20px;
+}
+.grid-4 .status{
+  grid-column:1;
+  grid-row:1/ span 2;
+  background: #bfffbf;
+}
+.grid-4 .name{
+  grid-row:1;
+  grid-column:2;
+}
+.grid-4 .icon{
+  grid-row:1;
+  grid-column:3 / span 2;
+}
+.grid-4 .info{
+  grid-row:2;
+  grid-column:2 / span 2;
+}
+.grid-4 .checkbox{
+  grid-row:2;
+  grid-column:4;
+  display: flex;
+  align-items: flex-end;
+}
+
 .grid-3{
   grid-template-rows: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
