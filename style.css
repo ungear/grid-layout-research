@@ -12,7 +12,19 @@
 .grid div{
   background: rgba(200,200,200, .3);
 }
-
+.grid-5{
+  grid-gap: 2px;
+  grid-template-areas:"a a a" "b c c" "d d f";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-5 .area-1{
+  grid-area: c;
+}
+.grid-5 .area-2{
+  grid-area: d;
+  background:#bfffbf;
+}
 .grid-4{
   grid-gap: 2px;
   grid-template-rows: 50px auto;
