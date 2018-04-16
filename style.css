@@ -30,27 +30,42 @@
   grid-gap: 2px;
   grid-template-rows: 50px auto;
   grid-template-columns: 10px auto 10px 20px;
+  -ms-grid-rows: 50px 2px 1fr;
+  -ms-grid-columns: 10px 2px 1fr 2px 10px 2px 20px;
 }
 .grid-4 .status{
   grid-column:1;
   grid-row:1/ span 2;
+  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
   background: #bfffbf;
 }
 .grid-4 .name{
   grid-row:1;
   grid-column:2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
 }
 .grid-4 .icon{
   grid-row:1;
   grid-column:3 / span 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
 }
 .grid-4 .info{
   grid-row:2;
   grid-column:2 / span 2;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
 }
 .grid-4 .checkbox{
   grid-row:2;
   grid-column:4;
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
   display: flex;
   align-items: flex-end;
 }
@@ -81,6 +96,8 @@
 
 .grid-1 {
   grid-template-columns: 1fr 2fr 1fr;
+  -ms-grid-columns: 1fr 2fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
 }
 .grid-2 {
   grid-template-rows: 1fr 2fr 1fr;
