@@ -13,6 +13,51 @@
 .grid div{
   background: rgba(200,200,200, .3);
 }
+.g7{
+  grid-gap:0;
+  grid-template-columns: 1fr 10px 30px 10px 1fr;
+  -ms-grid-columns: 1fr 10px 30px 10px 1fr;
+  height: auto;
+  width: 300px;
+}
+.g7 .g7__cell{
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  background: white;
+}
+.g7 .g7__cell.g7__cell--header{
+  background: rgba(200,200,200, .3);
+  border: none;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.g7 .g7__cell-name{
+  grid-column: 1 / span 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+}
+.g7 .g7__cell-name.g7__cell--header{
+  grid-column: 1;
+  -ms-grid-column: 1;
+}
+.g7 .g7__cell-is-admin{
+  grid-column: 3;
+  -ms-grid-column: 3;
+}
+.g7 .g7__cell-is-admin.g7__cell--header{
+  grid-column: 2 / span 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+}
+.g7 .g7__cell-project{
+  grid-column: 4/ span 2;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+}
+.g7 .g7__cell-project.g7__cell--header{
+  grid-column: 5;
+  -ms-grid-column: 5;
+}
 .g6{
   grid-gap:2px;
   grid-auto-flow: row dense;
